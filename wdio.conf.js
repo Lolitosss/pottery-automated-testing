@@ -23,7 +23,8 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/authentication/**/*.js'
+        //'./test/specs/authentication/**/*.js',
+        './test/specs/shop/**/*.js'
     ],
     // Patterns to exclude.
     exclude: [
