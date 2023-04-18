@@ -26,11 +26,11 @@ class AuthPage extends Page {
         await this.btnSubmit.click();
     }
 
-    async signUp (username, email, password, confirmPassword) {
+    async signUp (username, email, password) {
         await this.displayName.setValue(username);
         await this.email.setValue(email);
         await this.inputPassword.setValue(password);
-        await this.confirmPassword.setValue(confirmPassword);
+        await this.confirmPassword.setValue(password);
         await this.btnSubmit.click();
     }
 
