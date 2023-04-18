@@ -13,7 +13,7 @@ class AuthPage extends Page {
     }
 
     get confirmPassword () {
-        return $('#confirl-password');
+        return $('#sign-up-confirm-password');
     }
 
     get btnSubmit () {
@@ -27,7 +27,7 @@ class AuthPage extends Page {
     }
 
     async signUp (username, email, password, confirmPassword) {
-        await this.inputUsername.setValue(username);
+        await this.displayName.setValue(username);
         await this.email.setValue(email);
         await this.inputPassword.setValue(password);
         await this.confirmPassword.setValue(confirmPassword);
